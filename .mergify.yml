@@ -1,8 +1,10 @@
+extends: srcA
+
 pull_request_rules:
-  - name: CTRLC-CANARY-1790284474 control
+  - name: ctrlC local
     conditions:
       - base = main
     actions:
       label:
         add:
-          - CTRLC-SECRET-LABEL-1790284474
+          - local
